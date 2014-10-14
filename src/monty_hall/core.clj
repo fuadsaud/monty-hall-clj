@@ -5,8 +5,8 @@
 
 (defn -main
   [& args]
-  (let [n-doors 100
-        n-times 100
+  (let [n-doors (Integer. (first *command-line-args*))
+        n-times (Integer. (second *command-line-args*))
         results
         (for [_ (range n-times)]
           (((monty-hall n-doors) (rand-int n-doors)) true))]
