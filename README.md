@@ -1,36 +1,16 @@
 # monty-hall
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Clojure implementation of the Monty Hall Show door game experimenting with
+probabilities by using random choices.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar monty-hall-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
+```sh
+$ lein run <number-of-doors> <number-of-samples>
+```
 
 ## Examples
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+```sh
+$ lein run 3 100 # runs 100 examples for a 3 doors game
+```
